@@ -1,0 +1,94 @@
+.container-savannah {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+}
+
+.ghost-savannah {
+  animation: float-savannah 3s ease-out infinite;
+}
+
+@keyframes float-savannah {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+.shadowFrame-savannah {
+  width: 130px;
+  margin-top: 15px;
+}
+.shadow-savannah {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+  ellipse {
+    transform-origin: center center;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+
+
+.pulsate-css-savannah {
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0.0;
+
+  /* you dont need the stuff below, but its what I used to create the loading circle */
+  border: 1px solid #999;
+  border-radius: 30px;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(3, 3); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(8 , 8); opacity: 0.0;}
+}
+
+.indicator-savannah {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  width: 114px;
+  height: 114px;
+  margin: -57px 0 0 -57px;
+}
+
+.movingImg-savannah {
+  background-size: cover;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -30px 0 0 -73px;
+  width: 50px;
+  height: 50px;
+  animation: animate-vertical 1s linear infinite
+}
+
+@keyframes animate-vertical {
+  0% {margin-top: -30px; transform: scaleY(0.5)}
+  50%{margin-top: -80px; transform: scaleY(1)}
+  100%{margin-top: -30px; transform: scaleY(0.5)}
+}

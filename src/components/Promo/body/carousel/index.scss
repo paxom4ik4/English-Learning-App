@@ -1,0 +1,29 @@
+.carousel-wrapper {
+  height: 600px;
+
+}
+
+.carousel-img {
+  width: 100%;
+  display: block;
+  min-height: 250px;
+  max-height: 800px;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.carousel-text-light {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+.carousel-text-dark {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+

@@ -1,0 +1,258 @@
+$aside-color: rgb(124, 166, 222);
+$card-font-hover: #fbf1cf;
+$font: #fff;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6vw;
+  height: 100vh;
+  padding: 2vw 0 2vw 1.5vw;
+  background-color: $aside-color;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 3;
+  box-shadow: 3px 0 10px rgba(58, 58, 58, 0.589);
+  border-right: 1px solid rgba(68, 68, 68, 0.24);
+  transition: .3s;
+}
+
+.header-nav {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: .3s;
+  list-style: none;
+  li {
+    transition: .3s;
+    font-size: 2vw;
+  }
+  li a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+  }
+}
+
+.header-nav-dark {
+  background-color: black;
+}
+
+.main-header-menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-aside-point {
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.main-aside-btn {
+  background-color: $aside-color;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  color: $font;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    .aside-menu-tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.aside-menu-tooltip {
+  visibility: hidden;
+  font-size: 1.2vw;
+  height: 2vw;
+  background-color: $aside-color;
+  color: $font;
+  border-radius: 5px;
+  padding: 0 5px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: calc(50% - (2vw / 2));
+  left: 200%;
+  z-index: 1;
+  &:hover {
+    color: $card-font-hover;
+  }
+}
+
+.aside-tooltip-visible {
+  visibility: visible;
+  opacity: 0;
+  animation: reveal .3s linear;
+  animation-delay: .2s;
+  animation-fill-mode: both;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1vw;
+  margin-left: 0;
+  padding: 0;
+  color: $font;
+  &:hover {
+    transition: .2s;
+    .aside-menu-tooltip {
+      visibility: visible;
+      left: 150%;
+    }
+  }
+}
+
+.aside-logout {
+  cursor: pointer;
+  font-size: 2vw;
+  margin-bottom: 1vw;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media(max-width: 1024px) {
+  .header {
+    width: 8%;
+  }
+  .header-nav li,
+  .aside-menu-tooltip
+  {
+    font-size: 1.5em;
+  }
+  .aside-menu-tooltip {
+    height: 3vw;
+  }
+  .header-nav li span {
+    font-size: 0.8em;
+  }
+  .aside-logout {
+    font-size: 5em;
+  }
+}
+
+@media(max-width: 768px) {
+  .header {
+    width: 10%;
+  }
+  .header-nav li,
+  .aside-menu-tooltip
+  {
+    font-size: 2em;
+  }
+  .aside-menu-tooltip {
+    height: 3.3vw;
+  }
+  .header-nav li span {
+    font-size: 0.5em;
+  }
+  .profile span {
+    font-size: 2em;
+  }
+  .aside-logout {
+    font-size: 7em;
+  }
+}
+
+@media(max-width: 425px) {
+  .header {
+    width: 15%;
+  }
+  .header-nav li,
+  .aside-menu-tooltip
+  {
+    font-size: 2em;
+  }
+  .aside-menu-tooltip {
+    height: 6.3vw;
+  }
+  .header-nav li span {
+    font-size: 0.5em;
+  }
+  .profile span {
+    font-size: 3em;
+  }
+  .aside-logout {
+    font-size: 12em;
+  }
+}
+
+@media(max-width: 375px) {
+  .header {
+    width: 18%;
+  }
+  .header-nav li,
+  .aside-menu-tooltip
+  {
+    font-size: 2em;
+  }
+  .aside-menu-tooltip {
+    height: 8.3vw;
+  }
+  .header-nav li span {
+    font-size: 0.5em;
+  }
+  .profile span {
+    font-size: 3em;
+  }
+  .aside-logout {
+    font-size: 15em;
+  }
+}
+
+@media(max-width: 320px) {
+  .header {
+    width: 20%;
+  }
+  .header-nav li,
+  .aside-menu-tooltip
+  {
+    font-size: 2em;
+  }
+  .aside-menu-tooltip {
+    height: 8.3vw;
+  }
+  .header-nav li span {
+    font-size: 0.5em;
+  }
+  .profile span {
+    font-size: 3em;
+  }
+  .aside-logout {
+    font-size: 17em;
+  }
+}

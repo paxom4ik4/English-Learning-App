@@ -1,0 +1,72 @@
+.eng-puzzle-game-board {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vw;
+}
+
+.eng-puzzle-canvas {
+  background-color: #b1d2db;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 95%;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
+  z-index: 2;
+  user-select: none;
+}
+
+.eng-puzzle-active-sentence {
+  background-color: #5c9890;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
+}
+
+.eng-puzzle-sentence {
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.eng-puzzle-string-numbers {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eng-puzzle-string-number {
+  height: 8px;
+  width: 8px;
+  background-color: #368297;
+  border-radius: 50%;
+  transition: .3s ease-in-out;
+}
+
+.eng-puzzle-active-number {
+  transition: .3s ease-in-out;
+  background-color: #5fd2f1;
+  filter: drop-shadow(0 0 6px #5fd2f1);
+}
+
+.disabled {
+  display: none !important;
+}
+
+@media (max-width: 1366px) {
+  .eng-puzzle-canvas {
+    height: 40vw;
+  }
+
+  .eng-puzzle-string-number {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .eng-puzzle-canvas {
+    height: 45vw;
+  }
+}

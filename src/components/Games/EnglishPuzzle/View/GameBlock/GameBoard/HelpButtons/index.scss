@@ -1,0 +1,58 @@
+.eng-puzzle-help-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  margin-left: 5%;
+  margin-top: 1vw;
+}
+
+.eng-puzzle-help-button {
+  width: 7vw;
+  height: 2vw;
+  margin-right: 1vw;
+  background-color: #3d8180;
+  border-radius: 3px;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: .7vw;
+  user-select: none;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: #5c9890;
+    transition: .1s ease-in-out;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@media (max-width: 1366px) {
+  .eng-puzzle-help-buttons {
+    margin-top: 2.5vw;
+  }
+  .eng-puzzle-help-button {
+    width: 8vw;
+    height: 3.5vw;
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .eng-puzzle-help-buttons {
+    margin-top: 3vw;
+  }
+  .eng-puzzle-help-button {
+    width: 10vw;
+    height: 4vw;
+    font-size: 1.5vw;
+  }
+}

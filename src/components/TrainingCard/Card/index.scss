@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+.training-card-wrapper {
+  width: 60vw;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 4vw auto;
+  .training-card-content {
+    display: flex;
+    padding: 1vw 1vw;
+    height: 90%;
+    justify-content: space-around;
+
+  }
+  .training-card-footer {
+    display: flex;
+    flex-direction: column;
+    & button {
+      width: 141px;
+    }
+    & .btn-block-one {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    & .btn-block-two {
+      text-align: center;
+      & .next-card-btn {
+        width: auto;
+      }
+    }
+  }
+}
+
+.training-card-info {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  input {
+    height: auto;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-family: monospace;
+    font-size: 20px;
+    text-indent: unset;
+    &:focus {
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid #00bcd4;
+    }
+  }
+  form {
+    position: relative;
+    & .checked-answer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      &:focus {
+        outline: none;
+      }
+    }
+    & .half-transparent {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+      z-index: 1;
+      &:focus {
+        outline: none;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.training-card-image-container {
+width: 50%;
+height: auto;
+margin: auto;
+  .training-card-image {
+    width: 100%;
+    height: auto;
+    max-height: 215px;
+  }
+}
+
+.text-dark {
+  color: black;
+}
+
+#checked-answer {
+    text-align: left;
+    padding: 2px;
+  & span {
+    font-family: monospace;
+    font-size: 20px;
+  }
+}
+
+.training-card-info-deleted {
+  justify-content: center !important;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .training-card-wrapper {
+    width: 65vw;
+    .training-card-content {
+      flex-direction: column;
+      & .training-card-info {
+        width: auto;
+      }
+      & .training-card-image-container {
+        width: 60%;
+        margin: auto;
+        & .training-card-image  {
+          max-height: 155px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .training-card-wrapper {
+    width: 75vw;
+    & .training-card-content {
+      & .training-card-image-container {
+        width: 80%;
+        & .training-card-image  {
+          max-height: 215px;
+        }
+      }
+    }
+  }
+}

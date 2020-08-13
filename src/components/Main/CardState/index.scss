@@ -1,0 +1,48 @@
+$card-font-hover: #f0e3b8;
+$card: #84cca7;
+
+.main-control-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.main-control-field {
+  margin-bottom: .5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-control-option {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-control-enabled {
+  color: $card;
+}
+
+.main-control-disabled {
+  color: $card-font-hover;
+}
+
+.progress-bar.bg-success {
+  margin-bottom: 0;
+}
+
+.cards-game-buttons {
+  padding: 1vw 0;
+}
+
+.card-game-progress-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.study-option-start-btn {
+  width: 30%;
+  .cards-game-play-button {
+    width: 100%;
+  }
+}

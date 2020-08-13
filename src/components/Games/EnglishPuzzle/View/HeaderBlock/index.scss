@@ -1,0 +1,13 @@
+.eng-puzzle-header-section {
+  max-width: 1200px;
+  margin: 0 auto 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .eng-puzzle-header-section {
+    margin: 0 auto 4vw;
+  }
+}

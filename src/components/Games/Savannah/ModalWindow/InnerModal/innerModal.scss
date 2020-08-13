@@ -1,0 +1,18 @@
+.inner-modal-savannah {
+  width: 398px;
+  border-radius: 8px;
+  box-shadow: 1px 0 2px 0 rgba(0,0,0,.16);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 0 22px;
+}
+
+.modal-wrapper-savannah {
+  padding: 40px 0;
+  margin: 40px 0;
+  overflow: visible;
+  max-height: calc(100vh - 80px);
+  position: relative;
+}

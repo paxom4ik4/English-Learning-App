@@ -1,0 +1,26 @@
+.promo-footer{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: #90a5d0;
+  height: 50px;
+  padding: 0 10%;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.promo-footer-text{
+margin: 0;
+}
+
+.promo-footer-link{
+  color: white;
+text-decoration: none;
+}
+
+.promo-footer-link:hover{
+  text-decoration: none;
+  color: #e2e2e2;
+}

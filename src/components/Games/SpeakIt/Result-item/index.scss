@@ -1,0 +1,17 @@
+.error-item, .success-item  {
+  margin-bottom: 10px;
+  font-size: 25px;
+  @media screen and (max-width: 670px) {
+    font-size: 18px;
+  }
+}
+.audio-item {
+  width: 23px;
+  height: 23px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.opacity-word {
+  opacity: 0.8;
+}

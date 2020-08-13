@@ -1,0 +1,10 @@
+.english-puzzle-game-block {
+    max-width: 1024px;
+    margin: 1vw auto;
+}
+
+@media(max-width: 1024px) {
+  .english-puzzle-game-block {
+    margin: 0 2vw 0 0;
+  }
+}

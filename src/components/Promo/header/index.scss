@@ -1,0 +1,21 @@
+.promo-header-container{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  background: #90a5d0;
+
+}
+
+.promo-header-link{
+  text-decoration: none;
+  color: white;
+}
+
+.promo-header-link:hover{
+  text-decoration: none;
+  color: #ddffdc;
+}

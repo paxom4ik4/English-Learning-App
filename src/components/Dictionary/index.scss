@@ -1,0 +1,23 @@
+.dictionary-wrapper {
+  background-color: #90A5D0;
+}
+
+.dictionary-btn-container {
+  justify-content: flex-end;
+}
+
+@media (max-width: 500px) {
+  .dictionary-title {
+    font-size: 32px;
+  }
+
+  .dictionary-btn {
+    font-size: 12px;
+  }
+
+  .dictionary-btn-container {
+    justify-content: center;
+  }
+}
+
+

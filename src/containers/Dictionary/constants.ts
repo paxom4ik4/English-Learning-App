@@ -1,0 +1,4 @@
+export enum ActionType {
+  SHOW_DICT_LOADER = 'SHOW_DICT_LOADER',
+  HIDE_DICT_LOADER = 'HIDE_DICT_LOADER',
+}

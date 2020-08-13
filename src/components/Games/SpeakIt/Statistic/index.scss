@@ -1,0 +1,52 @@
+.speakit-statistic-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #0008;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  user-select: none;
+  .speakit-statistic {
+    position: relative;
+    width: 60vw;
+    height: 30vw;
+    margin: 10vw auto;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1vw 2vw;
+    overflow: hidden;
+    .speakit-statistic-content {
+      height: 85%;
+      overflow-y: scroll;
+    }
+  }
+  .speakit-statistic-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 15%;
+  }
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #5c9890;;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: #68a79e;
+    transition: .1s ease-in-out;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+  .card-body {
+    background-color: #fff;
+    color: black;
+  }
+}
+
+.speakit-stat-table {
+  width: 100%;
+}

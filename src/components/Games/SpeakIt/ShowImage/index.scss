@@ -1,0 +1,19 @@
+.img-wrapper {
+  height: 340px;
+  transition: all 0.5s ease;
+
+  .card-img {
+    width: 390px;
+    height: 260px;
+    // object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px rgba(118,118,118,.25);
+    display: block;
+    margin: 20px auto;
+  }
+  .translation {
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+  }
+}

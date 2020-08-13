@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+.eng-puzzle-start-page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url('../../../../assets/english-puzzle-images/Background/Background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &.eng-puzzle-hide-start-page {
+    animation: fadeout .7s linear;
+}
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1
+  } to {
+    opacity: 0;
+  }
+}
+
+
+.eng-puzzle-guide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  .eng-puzzle-app-info {
+    text-align: center;
+    margin-bottom: 2vw;
+    .eng-puzzle-appName {
+      font-size: 6vw;
+      color: whitesmoke;
+      margin-bottom: 1vw;
+    }
+    .eng-puzzle-app-describe {
+      font-size: 2vw;
+      line-height: 1;
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+

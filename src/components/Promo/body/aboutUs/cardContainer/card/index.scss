@@ -1,0 +1,14 @@
+.dev-card{
+  margin: 10px;
+  box-sizing: border-box;
+  min-width: 280px;
+  width: 30%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.45);
+  color: white;
+  background: #90A5D0;
+}
+
+.dev-card:nth-child(2n){
+  background: #84cca7;
+}

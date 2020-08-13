@@ -1,0 +1,41 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  text-align: center;
+  transition: all .5s;
+  padding: 15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: aliceblue;
+  overflow: hidden;
+
+  .result-container {
+    max-width: 800px;
+    width: 90%;
+    padding: 40px 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: left;
+    @media screen and (max-width: 670px) {
+      max-width: 90%;
+      overflow: auto;
+      padding: 40px 30px;
+    }
+  }
+}
+
+.btn-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.return-btn, .new-game-btn, .statistic-btn {
+  padding: 10px 20px;
+  width: 150px;
+  margin: 3% 2%;
+}

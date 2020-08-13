@@ -1,0 +1,4 @@
+export enum ActionType {
+  INCREASE_INDEX = 'INCREASE_INDEX',
+  SET_TO_INITIAL = 'SET_TO_INITIAL'
+}

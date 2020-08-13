@@ -1,0 +1,63 @@
+.speak-it-card {
+  cursor: pointer;
+  position: relative;
+  width: 180px;
+  height: 80px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 15px;
+  box-shadow: 0 0 14px -7px black;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  color: black;
+
+  &:hover {
+    transform: scale(0.9);
+    background: rgba(0,0,0,.1);
+    color: white;
+  }
+
+  .voice-img {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 19px;
+    left: 5px;
+    color: gray;
+  }
+  .word {
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    letter-spacing: 1px;
+
+  }
+  .transcription {
+    text-align: center;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+}
+
+.active-card {
+  background-color: hotpink;
+}
+.card-selected {
+  background-color: yellow;
+}
+.card-win {
+  background-color: #4CBB17;
+  color: white;
+  .voice-img {
+    color: black;
+  }
+}
+.card-mistake {
+  background-color: #E32636;
+  color: white;
+  .voice-img {
+    color: black;
+  }
+}

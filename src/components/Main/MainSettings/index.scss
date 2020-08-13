@@ -1,0 +1,130 @@
+$card-font-hover: #fbf1cf;
+$font: #fff;
+$card: #84cca7;
+
+.settings-block {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.settings-block-option,
+.settings-block-modes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-block-modes {
+  margin-top: 1vw;
+  height: 50%;
+}
+
+.settings-btn-lang {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.settings-block-lang-active {
+  color: $card-font-hover;
+}
+
+.settings-block-lang-disabled {
+  color: $font;
+}
+
+
+.sun[class*="active"] {
+  color:yellow !important;
+}
+
+.moon[class*="active"] {
+  color: rgb(0, 255, 255) !important;
+}
+
+.settings-study-modes {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.study-option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mode-check {
+  width: 1vw;
+  height: 1vw;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.study-option-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.study-option-checkmark {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 1vw;
+  height: 1vw;
+  background-color: #eee;
+  border-radius: 50%;
+  transition: .2s;
+}
+
+.study-option-container:hover .mode-check ~ .study-option-checkmark {
+  background-color: $card-font-hover;
+}
+
+.study-option-container .mode-check:checked ~ .study-option-checkmark {
+  background-color: $card;
+}
+
+.study-option-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.study-option-container .mode-check:checked ~ .study-option-checkmark:after {
+  display: block;
+}
+
+@media(max-width: 1024px) {
+  .study-option input {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media(max-width: 425px) {
+  .study-option input {
+    width: 15px;
+    height: 15px;
+  }
+}

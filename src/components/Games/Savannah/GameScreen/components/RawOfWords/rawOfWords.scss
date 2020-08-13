@@ -1,0 +1,64 @@
+.raw-wrapper {
+  position: absolute;
+  top: 30%;
+  margin-top: -30px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  min-height: 50%;
+  padding-top: 100px;
+}
+
+
+
+
+
+
+
+
+.falling-word {
+  position: absolute;
+  transform-origin: 50% bottom;
+  transition: all .3s ease;
+  transform: translate(-50%);
+  display: inline-block;
+  left: 50%;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 300;
+  white-space: nowrap;
+  color: #fff;
+  letter-spacing: 1px;
+  top: 60%;
+}
+
+.animation {
+  animation: falling linear 6s;
+}
+
+.animation-stop {
+  display: none;
+}
+
+.fail {
+  animation: zoomIn linear 2s;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+@keyframes falling {
+  from {
+    top: 0
+  }
+  to {
+    top: 60%
+  }
+}
